@@ -2,14 +2,15 @@ import streamlit as st
 from PIL import Image, ImageOps
 import numpy as np
 import tensorflow as tf
-
+import keras  # [수정 1] 호환성을 위해 keras 직접 임포트
 
 # ---
 # 1. 모델과 클래스 이름 로드
 @st.cache_resource
 def load_my_model():
+    # [수정 2] tf.keras 대신 keras.models 사용 (최신 버전 호환성 해결)
     # 미세조정된 모델 파일 이름 확인 ('pet_breed_classifier_finetuned.h5')
-    model = tf.keras.models.load_model('pet_breed_classifier_finetuned.h5')
+    model = keras.models.load_model('pet_breed_classifier_finetuned.h5')
     print("모델 로드 완료.")
     return model
 
