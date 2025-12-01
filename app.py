@@ -2,14 +2,14 @@ import streamlit as st
 from PIL import Image, ImageOps
 import numpy as np
 import tensorflow as tf
-import keras  # [수정 1] 호환성을 위해 keras 직접 임포트
+import keras  # 최신 버전 호환성을 위해 추가
 
 # ---
 # 1. 모델과 클래스 이름 로드
 @st.cache_resource
 def load_my_model():
-    # [수정 2] tf.keras 대신 keras.models 사용 (최신 버전 호환성 해결)
-    # 미세조정된 모델 파일 이름 확인 ('pet_breed_classifier_finetuned.h5')
+    # 최신 TensorFlow 호환성을 위해 keras.models 사용
+    # 파일 이름이 'pet_breed_classifier_finetuned.h5'인지 꼭 확인하세요!
     model = keras.models.load_model('pet_breed_classifier_finetuned.h5')
     print("모델 로드 완료.")
     return model
@@ -17,6 +17,7 @@ def load_my_model():
 
 @st.cache_data
 def load_class_names():
+    # 여기가 아까 오류났던 부분입니다. 깔끔하게 수정했습니다!
     with open('class_names.txt', 'r') as f:
         class_names = [line.strip() for line in f]
     print("클래스 이름 로드 완료.")
@@ -66,7 +67,7 @@ st.write("(Oxford-IIIT Pet Dataset 기반, MobileNetV2 미세 조정 학습)")
 uploaded_file = st.file_uploader("이미지 파일을 선택하세요...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    # 이미지 표시 (경고 메시지 안 뜨도록 수정됨)
+    # 이미지 표시 (use_container_width 적용됨)
     image = Image.open(uploaded_file)
     st.image(image, caption='업로드된 이미지', use_container_width=True)
     st.write("")
