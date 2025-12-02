@@ -17,7 +17,6 @@ def load_my_model():
 
 @st.cache_data
 def load_class_names():
-    # 여기가 아까 오류났던 부분입니다. 깔끔하게 수정했습니다!
     with open('class_names.txt', 'r') as f:
         class_names = [line.strip() for line in f]
     print("클래스 이름 로드 완료.")
@@ -67,7 +66,7 @@ st.write("(Oxford-IIIT Pet Dataset 기반, MobileNetV2 미세 조정 학습)")
 uploaded_file = st.file_uploader("이미지 파일을 선택하세요...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    # 이미지 표시 (use_container_width 적용됨)
+    # 이미지 표시
     image = Image.open(uploaded_file)
     st.image(image, caption='업로드된 이미지', use_container_width=True)
     st.write("")
@@ -97,11 +96,13 @@ if uploaded_file is not None:
     # 상위 3개 예측 결과 보여주기
     st.write("---")
     st.write("상위 3개 예측 결과:")
+
     top_3_indices = np.argsort(prediction[0])[-3:][::-1]
-    for i in top_3_indices:
+
+    for rank, i in enumerate(top_3_indices, start=1):
         name = format_breed_name(class_names[i])
         prob = prediction[0][i] * 100
-        st.write(f"1. **{name}**: {prob:.2f}%")
+        st.write(f"{rank}. **{name}**: {prob:.2f}%")
 
 else:
     st.info("먼저 반려동물 이미지를 업로드해주세요.")
