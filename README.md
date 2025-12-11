@@ -389,19 +389,25 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
   - Staffordshire Bull Terrier 등 유사 품종에서 모델이 애매하게 예측하고  
     경고 메시지로 안내하는 장면 포함  
 
-<img width="925" height="856" alt="6" src="https://github.com/user-attachments/assets/ebcd7f88-8c07-41ea-a3fd-6b83c5385922" />
+### 1. Miniature Pinscher (미니어처 핀셔)
+> **결과:** 99.8% (가장 완벽한 정답 사례)
 
+<p align="center">
+  <img width="48%" src="https://github.com/user-attachments/assets/ebcd7f88-8c07-41ea-a3fd-6b83c5385922" />
+  <img width="48%" src="https://github.com/user-attachments/assets/4e103e20-61c3-416e-8f00-386b78c4acf6" />
+</p>
 
-<img width="881" height="845" alt="6 5" src="https://github.com/user-attachments/assets/4e103e20-61c3-416e-8f00-386b78c4acf6" />
-**Miniature Pinscher (99.8%):** 가장 완벽한 정답 사례.
+<br>
 
+### 2. Sphynx (스핑크스)
+> **결과:** 98.8% (털 없는 특징 인식 성공 사례)
 
+<p align="center">
+  <img width="48%" src="https://github.com/user-attachments/assets/8d14509b-3355-4c3d-9ae7-fa99461af343" />
+  <img width="48%" src="https://github.com/user-attachments/assets/27434dc6-9801-49b0-bb5a-3e3633ff1230" />
+</p>
 
-<img width="848" height="826" alt="7" src="https://github.com/user-attachments/assets/8d14509b-3355-4c3d-9ae7-fa99461af343" />
-
-
-<img width="934" height="800" alt="7 5" src="https://github.com/user-attachments/assets/27434dc6-9801-49b0-bb5a-3e3633ff1230" />
-**Sphynx (98.8%):** 털 없는 특징 인식 성공 사례.
+<br>
 
 
 <img width="875" height="859" alt="5" src="https://github.com/user-attachments/assets/1dd6ba7f-2057-44ad-b7a3-2e125b0bd875" />
