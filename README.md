@@ -297,15 +297,11 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 <img width="929" height="773" alt="8 5" src="https://github.com/user-attachments/assets/9129080d-64fa-4d32-a155-ae435b87def2" />
 
 
-**3) Staffordshire Bull Terrier vs American Pit Bull Terrier (구조적 난제)**
-* **현상:** 모델 학습 과정 및 일반적인 테스트에서 1위와 2위 후보가 **60% vs 30%** 또는 **55% vs 35%** 등 근소한 확률 차이를 보이는 경향이 있다.
-* **분석:**
-    * 실제 육안으로도 두 품종은 외형이 매우 흡사하여 사람에게도 구분이 어려운 난제다.
-    * 이는 단순한 모델의 성능 부족이라기보다, **데이터셋 자체가 가진 내재적 난이도(Inherent Difficulty)**가 모델의 확률 분포에 그대로 반영된 결과로 해석된다.
+
 ### 6.3 종합 평가 (Overall Evaluation)
 
 * **성과:** 명확한 외형 특징을 가진 품종에 대해서는 거의 **100%에 가까운 신뢰도**를 보이며, 희귀 고양이 품종에서도 기대 이상의 성능을 달성했다.
-* **보완:** 유사 품종 간의 세밀한 구분(Fine-grained Classification)에 존재하는 한계를 극복하기 위해, **'확률 기반 경고 메시지'**와 **'Top-3 후보 표시'** 기능을 도입하여 **사용자 경험(UX) 측면에서 완성도**를 높였.
+* **보완:** 유사 품종 간의 세밀한 구분(Fine-grained Classification)에 존재하는 한계를 극복하기 위해, **'확률 기반 경고 메시지'**와 **'Top-3 후보 표시'** 기능을 도입하여 **사용자 경험(UX) 측면에서 완성도**를 높였다.
 
 ## 7. 프로젝트 종합 평가 (Comprehensive Evaluation)
 
