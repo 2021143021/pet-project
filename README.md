@@ -271,14 +271,11 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 ### 6.2 유사 품종 혼동 사례 (Confusion Cases)
 
 **1) Newfoundland vs Leonberger (대형견 - 실험 결과)**
-* **현상:** **Newfoundland(63.08%)**가 1순위로 예측되었으나, 2순위인 **Leonberger(34.11%)**와 확률 차이가 크지 않았다.
+* **현상:** **Newfoundland(63.08%)**가 1순위로 예측되었으나, 2순위인 **Leonberger(34.11%)**와 확률 차이가 크지 않았다. 1순위랑 2순위가 차이가 많이 나는데 왜 이게 유사 품종 혼동이라 오해할수있지만, 그만큼 1순위 Newfoundland(63.08%)가 2순위인 Leonberger(34.11%)와 너무 유사해, 다른 종의 높은 결과들에비해 1순위 결과까지 낮게나오면서까지 ai가 1순위와 2순위가 헷갈렸다는 점을 보인다.
 * **분석:** 두 견종은 모두 체구가 거대하고 풍성한 갈색/검정 털을 가지고 있어 실제 육안으로도 구별이 쉽지 않다. AI가 압도적인 확률을 내놓지 않고 확률을 분산시킨 것은, 단순히 오답을 낸 것이 아니라 **유사한 특징을 가진 후보군 사이에서 합리적인 추론**을 수행했음을 시사한다.
-<img width="853" height="844" alt="3" src="https://github.com/user-attachments/assets/a6e79ad4-724c-48a0-8e78-91152ee85349" />
-<img width="897" height="737" alt="3 5" src="https://github.com/user-attachments/assets/a8d4ee40-6d8e-4f8b-9c00-1c916b47ca97" />
+<img width="853" height="844" alt="3" src="https://github.com/user-attachments/assets/73e69573-b866-4817-92f3-50649efd6196" />
 
-
-
-* 
+<img width="897" height="737" alt="3 5" src="https://github.com/user-attachments/assets/cc61b168-a52d-4b1b-832b-c3c44ca6198b" />
 
 **2) Russian Blue vs British Shorthair (회색 묘종 - 실험 결과)**
 * **현상:** **Russian Blue(71.96%)**로 정답을 맞혔으나, **British Shorthair(20.47%)**가 2순위로 뒤따랐다.
