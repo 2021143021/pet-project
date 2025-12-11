@@ -277,21 +277,24 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 
 <img width="897" height="737" alt="3 5" src="https://github.com/user-attachments/assets/cc61b168-a52d-4b1b-832b-c3c44ca6198b" />
 
-**2) Russian Blue vs British Shorthair (회색 묘종 - 실험 결과)**
-* **현상:** **Russian Blue(71.96%)**로 정답을 맞혔으나, **British Shorthair(20.47%)**가 2순위로 뒤따랐다.
-* **분석:** 두 품종 모두 '청회색 단모'라는 강력한 공통점을 가지고 있다. 
-  ## 육안으로 구분이 어려운 유사 품종(British Shorthair)이 존재할 때, 모델의 확신도가 71%로 조정되는 모습
+**2) Russian Blue vs British Shorthair (회색 묘종 - 심층 분석)**
 
-* **현상:**
-    * 앞선 사례(Scottish Terrier, 99.9%)와 달리, 정답을 맞혔음에도 불구하고 예측 확률이 **71.96%**로 상대적으로 낮게 측정되었습니다.
+* **실험 결과 (Phenomenon):**
+    * **Russian Blue(71.96%)**로 정답을 맞혔으나, 2순위인 **British Shorthair(20.47%)**가 비교적 높은 확률로 뒤따랐다.
+    * 앞선 **Scottish Terrier(99.9%)** 사례와 달리, 정답임에도 불구하고 확신도가 약 70%대로 낮게 조정된 모습이다.
 
-* **분석 (핵심 Insight):**
-    * 이는 모델의 성능 저하가 아니라, **입력 이미지의 난이도를 모델이 정확히 인지하고 있음**을 보여줍니다.
-    * 특히 2순위 후보로 외형이 매우 흡사한 **British Shorthair(20.47%)**를 지목했다는 점은, 모델이 단순히 이미지를 암기한 것이 아니라 **'회색 단모'라는 시각적 특징(Feature)을 구체적으로 학습**했음을 증명합니다.
+* **상세 분석 (Core Insight):**
+    * 두 품종은 모두 **'청회색 단모'**라는 강력한 시각적 공통점을 가지고 있어 육안으로도 구분이 어렵다.
+    * 이때 모델이 확신도를 99%가 아닌 71%로 낮춘 것은 성능 저하가 아니라, **입력 이미지의 난이도를 정확히 인지(Calibration)**하고 있음을 보여준다.
+    * 특히 외형이 매우 흡사한 British Shorthair를 2순위로 지목했다는 점은, 모델이 단순히 이미지를 암기한 것이 아니라 **'회색 단모'와 '체형' 같은 구체적인 특징(Feature)을 학습**했음을 증명한다.
 
 * **결과:**
-    * 결과적으로 본 모델은 쉬운 케이스와 어려운 케이스를 구분하는 **변별력(Discriminability)**을 갖추고 있음을 확인했습니다.
+    * 결과적으로 본 모델은 쉬운 케이스와 어려운 케이스를 명확히 구분하는 **변별력(Discriminability)**을 갖추고 있음을 확인한다.
 
+<img width="855" height="844" alt="8" src="https://github.com/user-attachments/assets/9661efd9-70f3-485d-af63-04e36b5937c0" />
+
+
+<img width="929" height="773" alt="8 5" src="https://github.com/user-attachments/assets/9129080d-64fa-4d32-a155-ae435b87def2" />
 
 
 **3) Staffordshire Bull Terrier vs American Pit Bull Terrier (구조적 난제)**
@@ -385,6 +388,34 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
   - Egyptian Mau, Russian Blue 등 희귀 품종 예시 테스트  
   - Staffordshire Bull Terrier 등 유사 품종에서 모델이 애매하게 예측하고  
     경고 메시지로 안내하는 장면 포함  
+
+<img width="925" height="856" alt="6" src="https://github.com/user-attachments/assets/ebcd7f88-8c07-41ea-a3fd-6b83c5385922" />
+
+
+<img width="881" height="845" alt="6 5" src="https://github.com/user-attachments/assets/4e103e20-61c3-416e-8f00-386b78c4acf6" />
+**Miniature Pinscher (99.8%):** 가장 완벽한 정답 사례.
+
+
+
+<img width="848" height="826" alt="7" src="https://github.com/user-attachments/assets/8d14509b-3355-4c3d-9ae7-fa99461af343" />
+
+
+<img width="934" height="800" alt="7 5" src="https://github.com/user-attachments/assets/27434dc6-9801-49b0-bb5a-3e3633ff1230" />
+**Sphynx (98.8%):** 털 없는 특징 인식 성공 사례.
+
+
+<img width="875" height="859" alt="5" src="https://github.com/user-attachments/assets/1dd6ba7f-2057-44ad-b7a3-2e125b0bd875" />
+
+
+<img width="929" height="773" alt="5 5" src="https://github.com/user-attachments/assets/8d1f0cf2-c81d-40f8-8fe5-9a3b1c51c132" />
+
+
+
+<img width="894" height="832" alt="2" src="https://github.com/user-attachments/assets/f730953b-a860-467c-ba07-445995777948" />
+
+
+
+<img width="857" height="789" alt="2 5" src="https://github.com/user-attachments/assets/bb61d3b8-7770-48a1-ace8-c797e3ed92a4" />
 
 
 ## 11. 참고 문헌 (References)
