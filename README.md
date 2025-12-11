@@ -361,12 +361,6 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
   - Staffordshire Bull Terrier 등 유사 품종에서 모델이 애매하게 예측하고  
     경고 메시지로 안내하는 장면 포함  
 
-📎 **부록(동작 화면 캡처)**  
-
-- 메인 화면 (이미지 업로드 전/후 화면)  
-- Basset Hound, Samoyed 등 확신도가 높은 견종 결과 화면  
-- Egyptian Mau, Russian Blue 등 희귀 고양이 결과 화면  
-- Staffordshire vs Pit Bull 계열 등 **유사 품종 혼동 예시** 결과 화면  
 
 ## 11. 참고 문헌 (References)
 
