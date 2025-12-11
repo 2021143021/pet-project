@@ -409,20 +409,23 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 
 <br>
 
+### 3. Samoyed (사모예드)
+> **결과:** 98.9% (흰색 털의 특징을 잘 잡아냄)
 
-<img width="875" height="859" alt="5" src="https://github.com/user-attachments/assets/1dd6ba7f-2057-44ad-b7a3-2e125b0bd875" />
+<p align="center">
+  <img width="48%" src="https://github.com/user-attachments/assets/1dd6ba7f-2057-44ad-b7a3-2e125b0bd875" />
+  <img width="48%" src="https://github.com/user-attachments/assets/8d1f0cf2-c81d-40f8-8fe5-9a3b1c51c132" />
+</p>
 
+<br>
 
-<img width="929" height="773" alt="5 5" src="https://github.com/user-attachments/assets/8d1f0cf2-c81d-40f8-8fe5-9a3b1c51c132" />
+### 4. Soft Coated Wheaten Terrier (휘튼 테리어)
+> **결과:** 98.6% (복잡한 배경에서도 인식 성공)
 
-
-
-<img width="894" height="832" alt="2" src="https://github.com/user-attachments/assets/f730953b-a860-467c-ba07-445995777948" />
-
-
-
-<img width="857" height="789" alt="2 5" src="https://github.com/user-attachments/assets/bb61d3b8-7770-48a1-ace8-c797e3ed92a4" />
-
+<p align="center">
+  <img width="48%" src="https://github.com/user-attachments/assets/f730953b-a860-467c-ba07-445995777948" />
+  <img width="48%" src="https://github.com/user-attachments/assets/bb61d3b8-7770-48a1-ace8-c797e3ed92a4" />
+</p>
 
 ## 11. 참고 문헌 (References)
 
