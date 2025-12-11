@@ -254,7 +254,10 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 
 **1) Scottish Terrier (스코티시 테리어)**
 * **결과:** 예측 확률 **99.91%** 기록.
-* **분석:** 입력된 이미지가 두 마리의 강아지를 포함하고 있는 복잡한 구도였음에도 불구하고, 품종 고유의 외형적 특징(검은 털, 입 주변 수염 등)을 정확히 포착하여 거의 **100%에 가까운 확신도**를 보였다.<img width="947" height="785" alt="1 5" src="https://github.com/user-attachments/assets/66fffeba-7abd-4d4f-b721-4eaa9440cb67" />
+* **분석:** 입력된 이미지가 두 마리의 강아지를 포함하고 있는 복잡한 구도였음에도 불구하고, 품종 고유의 외형적 특징(검은 털, 입 주변 수염 등)을 정확히 포착하여 거의 **100%에 가까운 확신도**를 보였다.<img width="987" height="848" alt="1" src="https://github.com/user-attachments/assets/63451645-0738-4ba3-a4c5-e04dfc78fd43" />
+
+*
+* <img width="947" height="785" alt="1 5" src="https://github.com/user-attachments/assets/66fffeba-7abd-4d4f-b721-4eaa9440cb67" />
 
 
 **2) Miniature Pinscher (미니어처 핀셔)**
