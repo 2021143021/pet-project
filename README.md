@@ -271,7 +271,7 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 ### 6.2 유사 품종 혼동 사례 (Confusion Cases)
 
 **1) Newfoundland vs Leonberger (대형견 - 실험 결과)**
-* **현상:** **Newfoundland(63.08%)**가 1순위로 예측되었으나, 2순위인 **Leonberger(34.11%)**와 확률 차이가 크지 않았다. 1순위랑 2순위가 차이가 많이 나는데 왜 이게 유사 품종 혼동이라 오해할수있지만, 그만큼 1순위 Newfoundland(63.08%)가 2순위인 Leonberger(34.11%)와 너무 유사해, 다른 종의 높은 결과들에비해 1순위 결과까지 낮게나오면서까지 ai가 1순위와 2순위가 헷갈렸다는 점을 보인다.
+* **현상:** **Newfoundland(63.08%)**가 1순위로 예측되었으나, 2순위인 **Leonberger(34.11%)**와 확률 차이가 크지 않았다. 1순위랑 2순위가 차이가 많이 나는데 왜 이게 유사 품종 혼동이라 오해할수있지만, 그만큼 1순위 Newfoundland(63.08%)가 2순위인 Leonberger(34.11%)와 너무 유사해, 다른 종의 높은 결과들에비해 1순위 결과까지 낮게나오면서까지 AI가 1순위와 2순위가 헷갈렸다는 점을 보인다.
 * **분석:** 두 견종은 모두 체구가 거대하고 풍성한 갈색/검정 털을 가지고 있어 실제 육안으로도 구별이 쉽지 않다. AI가 압도적인 확률을 내놓지 않고 확률을 분산시킨 것은, 단순히 오답을 낸 것이 아니라 **유사한 특징을 가진 후보군 사이에서 합리적인 추론**을 수행했음을 시사한다.
 <img width="853" height="844" alt="3" src="https://github.com/user-attachments/assets/73e69573-b866-4817-92f3-50649efd6196" />
 
@@ -280,6 +280,12 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 **2) Russian Blue vs British Shorthair (회색 묘종 - 실험 결과)**
 * **현상:** **Russian Blue(71.96%)**로 정답을 맞혔으나, **British Shorthair(20.47%)**가 2순위로 뒤따랐다.
 * **분석:** 두 품종 모두 '청회색 단모'라는 강력한 공통점을 가지고 있다. 모델은 이를 감지하여 확신도를 70%대로 낮추었으며, 이는 본 프로젝트에서 **'주의(Warning)' UI를 제공해야 하는 당위성**을 잘 보여주는 사례이다.
+
+<img width="855" height="844" alt="8" src="https://github.com/user-attachments/assets/d7b40427-4039-433a-96a6-5e15c4d2e089" />
+
+<img width="929" height="773" alt="8 5" src="https://github.com/user-attachments/assets/972f4e89-620f-4071-8a51-2bca55e2c1b4" />
+
+
 
 **3) Staffordshire Bull Terrier vs American Pit Bull Terrier (구조적 난제)**
 * **현상:** 모델 학습 과정 및 일반적인 테스트에서 1위와 2위 후보가 **60% vs 30%** 또는 **55% vs 35%** 등 근소한 확률 차이를 보이는 경향이 있다.
