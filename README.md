@@ -404,10 +404,9 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 ### 2. Sphynx (스핑크스)
 > **결과:** 98.8% (털 없는 특징 인식 성공 사례)
 
-<p>
+<p align="center">
 <img width="473" height="777" alt="스크린샷 2025-12-15 105038" src="https://github.com/user-attachments/assets/9f128a12-4270-4a36-b948-52a6b072aaf4" />
 
-lign="center">
 
 </p>
 
