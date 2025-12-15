@@ -282,9 +282,9 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 **1) Newfoundland vs Leonberger (대형견 - 실험 결과)**
 * **현상:** **Newfoundland(63.08%)**가 1순위로 예측되었으나, 2순위인 **Leonberger(34.11%)**와 확률 차이가 크지 않았다. 수치상으로는 1위(63%)와 2위(34%)의 격차가 커 보일 수 있으나, 타 품종들이 99% 이상의 확신도를 보인 것과 비교하면 이는 현저히 낮은 신뢰도이다. 이는 Newfoundland와 Leonberger의 외형이 매우 흡사하여 모델이 명확한 판단을 유보했음을 의미한다. 즉, 1순위 확신도가 낮게 측정된 것은 모델이 2순위 후보(Leonberger) 역시 유력한 정답으로 인지하여 확률을 분산시킨 합리적인 결과로 해석된다.
 * **분석:** 두 견종은 모두 체구가 거대하고 풍성한 갈색/검정 털을 가지고 있어 실제 육안으로도 구별이 쉽지 않다. AI가 압도적인 확률을 내놓지 않고 확률을 분산시킨 것은, 단순히 오답을 낸 것이 아니라 **유사한 특징을 가진 후보군 사이에서 합리적인 추론**을 수행했음을 시사한다.
-<img width="853" height="844" alt="3" src="https://github.com/user-attachments/assets/73e69573-b866-4817-92f3-50649efd6196" />
+* 
+<img width="513" height="803" alt="515" src="https://github.com/user-attachments/assets/86ecd8d0-a69f-44d8-a622-4cf691ce2439" />
 
-<img width="897" height="737" alt="3 5" src="https://github.com/user-attachments/assets/cc61b168-a52d-4b1b-832b-c3c44ca6198b" />
 
 **2) Russian Blue vs British Shorthair (회색 묘종 - 심층 분석)**
 
@@ -300,10 +300,7 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 * **결과:**
     * 결과적으로 본 모델은 쉬운 케이스와 어려운 케이스를 명확히 구분하는 **변별력(Discriminability)**을 갖추고 있음을 확인한다.
 
-<img width="855" height="844" alt="8" src="https://github.com/user-attachments/assets/9661efd9-70f3-485d-af63-04e36b5937c0" />
-
-
-<img width="929" height="773" alt="8 5" src="https://github.com/user-attachments/assets/9129080d-64fa-4d32-a155-ae435b87def2" />
+<img width="493" height="795" alt="777777" src="https://github.com/user-attachments/assets/a2b8dcd2-6b14-4d9c-a384-786a842f3e3c" />
 
 
 
@@ -398,8 +395,8 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 > **결과:** 99.8% (가장 완벽한 정답 사례)
 
 <p align="center">
-  <img width="48%" src="https://github.com/user-attachments/assets/ebcd7f88-8c07-41ea-a3fd-6b83c5385922" />
-  <img width="48%" src="https://github.com/user-attachments/assets/4e103e20-61c3-416e-8f00-386b78c4acf6" />
+<img width="488" height="873" alt="image" src="https://github.com/user-attachments/assets/17128cce-dadf-40a4-b69c-18e99e584c1e" />
+
 </p>
 
 <br>
@@ -407,9 +404,11 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 ### 2. Sphynx (스핑크스)
 > **결과:** 98.8% (털 없는 특징 인식 성공 사례)
 
-<p align="center">
-  <img width="48%" src="https://github.com/user-attachments/assets/8d14509b-3355-4c3d-9ae7-fa99461af343" />
-  <img width="48%" src="https://github.com/user-attachments/assets/27434dc6-9801-49b0-bb5a-3e3633ff1230" />
+<p>
+<img width="473" height="777" alt="스크린샷 2025-12-15 105038" src="https://github.com/user-attachments/assets/9f128a12-4270-4a36-b948-52a6b072aaf4" />
+
+lign="center">
+
 </p>
 
 <br>
@@ -418,8 +417,8 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 > **결과:** 98.9% (흰색 털의 특징을 잘 잡아냄)
 
 <p align="center">
-  <img width="48%" src="https://github.com/user-attachments/assets/1dd6ba7f-2057-44ad-b7a3-2e125b0bd875" />
-  <img width="48%" src="https://github.com/user-attachments/assets/8d1f0cf2-c81d-40f8-8fe5-9a3b1c51c132" />
+<img width="480" height="785" alt="99999" src="https://github.com/user-attachments/assets/e727a28d-2941-4446-b840-c2ae8501d9ed" />
+
 </p>
 
 <br>
@@ -428,8 +427,7 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 > **결과:** 98.6% (복잡한 배경에서도 인식 성공)
 
 <p align="center">
-  <img width="48%" src="https://github.com/user-attachments/assets/f730953b-a860-467c-ba07-445995777948" />
-  <img width="48%" src="https://github.com/user-attachments/assets/bb61d3b8-7770-48a1-ace8-c797e3ed92a4" />
+<img width="572" height="846" alt="898988" src="https://github.com/user-attachments/assets/434101b8-2682-4274-a74c-a34e46477576" />
 </p>
 
 ## 11. 참고 문헌 (References)
