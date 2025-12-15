@@ -261,17 +261,16 @@ Streamlit UI에 결과 시각화 (메시지 + Top-3 리스트)
 **1) Scottish Terrier (스코티시 테리어)**
 * **결과:** 예측 확률 **99.91%** 기록.
 * **분석:** 입력된 이미지가 두 마리의 강아지를 포함하고 있는 복잡한 구도였음에도 불구하고, 품종 고유의 외형적 특징(검은 털, 입 주변 수염 등)을 정확히 포착하여 거의 **100%에 가까운 확신도**를 보였다.
+<img width="594" height="648" alt="111" src="https://github.com/user-attachments/assets/c3b3fb99-a2ae-41a3-ac4b-5a4c07312d3f" />
 
 *
-*
+*<img width="571" height="730" alt="111111" src="https://github.com/user-attachments/assets/0bae7aa4-1764-4219-82b9-286093a1d98d" />
+
 
 
 **2) Miniature Pinscher (미니어처 핀셔)**
 * **결과:** 예측 확률 **99.81%** 기록.
-* **분석:** 짧은 털과 뾰족한 귀 등 특징이 뚜렷한 견종에 대해서는 배경이나 조명과 관계없이 매우 **안정적인 성능**을 발휘함을 확인했다.<img width="594" height="648" alt="111" src="https://github.com/user-attachments/assets/4443e429-aa70-4d23-abdc-d5ad71fc3788" />
-
-
-<img width="594" height="648" alt="111" src="https://github.com/user-attachments/assets/ad6412df-2188-46ef-acc2-d1ec15a9425c" />
+* **분석:** 짧은 털과 뾰족한 귀 등 특징이 뚜렷한 견종에 대해서는 배경이나 조명과 관계없이 매우 **안정적인 성능**을 발휘함을 확인했다.
 
 
 **3) Sphynx (스핑크스 고양이)**
